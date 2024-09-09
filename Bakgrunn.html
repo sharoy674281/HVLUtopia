@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVLtopia</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <style>
+
+        @media (max-width: 768px) {
+            header {
+                height: 400px;
+            }
+            h1 {
+                font-size: 50px;
+            }
+            nav ul {
+                font-size: 24px;
+            }
+            .parent {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .parent img {
+                width: 80%;
+                padding: 10px;
+            }
+            .parent a {
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            .parent p {
+                padding-bottom: 20px;
+            }
+            .item {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+ 
+        @media (min-width: 769px) and (max-width: 1024px) {
+        }
+
+
+        @media (min-width: 1025px) {
+            .item {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+            .item:last-child {
+                margin-right: 0; 
+            }
+}
+
+    </style>
+</head>
+<body>
+        <header>
+            <h1>HVLtopia</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Hjem</a></li>
+                <li><a href="Vision.html">Vision</a></li>
+                <li><a href="Bakgrunn.html">Bakrunn</a></li>
+                <li><a href="Prosjektbeskrivelse.html">Prosjektbeskrivelse</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="icons">
+                <a href="Index.html"><i class="ri-home-3-line"></i></a>
+                <a href="Vision.html"><i class="ri-folder-info-line"></i></a>
+                <a href="Bakrunn.html"><i class="ri-chat-1-line"></i></a>
+                <a href="Prosjektbeskrivlse.html"><i class="ri-menu-line"></i></a>
+            </div>
+            <div class="Bakrunntext">
+                <div>
+                    <p>
+                        Bakgrunn
+                    </p>
+                </div>
+                
+        
+            </div>
+        </main>
+
+<footer>
+    <p>Kontaktinformasjon: <a href="mailto:kontakt@eksempel.com">kontakt@eksempel.com</a></p>
+    <p>&copy; 2023 Min Nettside. Alle rettigheter reservert.</p>
+</footer>
+    <script>
+        window.addEventListener('scroll', () => {
+            const icons = document.querySelector('.icons');
+            if (window.scrollY > 100) {
+                icons.classList.add('scrolling');
+            } else {
+                icons.classList.remove('scrolling');
+            }
+        });
+    </script>
+</body>
+</html>
