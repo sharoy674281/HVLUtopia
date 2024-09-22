@@ -4,35 +4,124 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="./styles.css">
 	</head>
 	<body>
-		<nav>
+		<!-- Navbaren er delt opp i to deler, ein venstre del med logo, og høyre delen består av alle linkene som fører til andre sider på nettsiden. ###FELLES FOR ALLE SIDER#### -->
+		<nav class="home-nav">
 			<div class="logo"></div>
 			<ul>
-				<li><a href="">Hjem</a></li>
-				<li><a href="">Om Oss</a></li>
-				<li><a href="">Prosjektet</a></li>
-				<li><a href="">Bærekraft og samfunnsansvar</a></li>
-				<li><a href="">Kontakt Oss</a></li>
+				<li><a href="./index.html">Hjem</a></li>
+				<li><a href="./sider/omoss.html">Om Oss</a></li>
+				<li><a href="./sider/prosjektet.html">Prosjektet</a></li>
+				<li>
+					<a href="./sider/samfunnsansvar.html">
+						Bærekraft og samfunnsansvar
+					</a>
+				</li>
+				<li><a href="./sider/kontakt.html">Kontakt Oss</a></li>
 			</ul>
 		</nav>
-		<header>
-			<section class="section-left">
-				<h1>HVLUtopia</h1>
-				<h4>Lorem ipsum dolor sit amet.</h4>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Consequatur tempora facere ducimus ipsum veniam quibusdam iusto
-					labore eos! Deserunt, ea.
-				</p>
-				<div class="section-left-buttons">
-					<button>Prosjektet</button>
-					<button>Kontakt Oss</button>
+		<!-- headeren for hjemsiden er delt i tre deler med retning nedover, første delen er tittelen, så har vi undertittelen, også er det en knapp som fører til prosjekt-siden -->
+		<header class="hjem-header">
+			<h1 class="hjem-header-tittel">HVLtopia</h1>
+			<p class="hjem-header-undertittel">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+				itaque iure eaque ipsam impedit. Consequatur culpa praesentium
+				itaque 
+			</p>
+			<a class="hjem-header-knapp" href="./sider/prosjektet.html">
+				<span>Prosjekt</span>
+			</a>
+		</header>
+		<!-- i main seksjonen skriver vi informasjon om hvltopia og slikt, og den er delt i tre deler, hvor første delen består av 3 viktige tinge HVLTopia står for, andre delen er delt i to hvor vi skriver om grønn teknologi i byutvikling og felleskapsfokusert bydesign -->
+		<main>
+			<section class="hjem-main-foerste">
+				<div class="hjem-main-boks hjem-main-boks1">
+					<div>
+						<img src="" alt="" />
+						<h3>Bærekraftig byutvikling</h3>
+					</div>
+					<p>
+						Et sentralt fokus for HVLtopia er å utvikle fremtidsrettede
+						løsninger som reduserer byens karbonfotavtrykk, minimerer
+						energiforbruk og fremmer bærekraftige livsstiler. Dette
+						inkluderer tiltak som smarte transportsystemer og kontinuerlig
+						overvåkning av luftkvalitet og støy.
+					</p>
+				</div>
+				<div class="hjem-main-boks hjem-main-boks2">
+					<div>
+						<img src="" alt="" />
+						<h3>Inkludering og tilgjengelighet</h3>
+					</div>
+					<p>
+						HVLtopia legger vekt på at byutvikling skal være tilgjengelig
+						for alle, uavhengig av deres bakgrunn eller behov. Dette
+						innebærer å skape trygge og effektive infrastrukturer som
+						sørger for lik tilgang til byens fasiliteter og tjenester.
+					</p>
+				</div>
+				<div class="hjem-main-boks hjem-main-boks3">
+					<div>
+						<img src="" alt="" />
+						<h3>Helse og livskvalitet</h3>
+					</div>
+					<p>
+						Ved å benytte teknologiske løsninger, som sensorer for
+						overvåkning av forurensning og temperatur, adresserer HVLtopia
+						helserisikoer knyttet til byliv. Prosjektet tar sikte på å
+						forbedre helse- og sikkerhetsaspektene i urbane områder.
+					</p>
 				</div>
 			</section>
-			<section class="section-right">
-				<img src="#" alt="" />
+			<section class="hjem-main-andre">
+				<div class="hjem-main-andre-venstre hjem-main-andre-seksjon">
+					<h1>Grønn teknologi i byutvikling</h1>
+					<p>
+						Grønn teknologi spiller en nøkkelrolle i HVLtopias visjon for
+						en bærekraftig fremtid. Gjennom bruk av energieffektive
+						bygninger, solcellepaneler og smarte sensorer bidrar
+						prosjektet til å redusere byens karbonfotavtrykk. Sensorer
+						overvåker luftkvalitet, temperatur og støyforurensning, noe
+						som gjør det mulig å reagere raskt på miljømessige
+						utfordringer. Ved å integrere slike teknologiske løsninger i
+						byens infrastruktur, sørger HVLtopia for at ressursene
+						utnyttes effektivt og miljøvennlig.
+					</p>
+				</div>
+				<div class="hjem-main-andre-høyre hjem-main-andre-seksjon">
+					<h1>Fellesskapsfokusert bydesign</h1>
+					<p>
+						HVLtopia legger stor vekt på å skape byrom som fremmer sosiale
+						interaksjoner og inkludering. Ved å designe offentlige rom som
+						oppmuntrer til fellesskap, som parker, torg og trygge gang- og
+						sykkelstier, gjør prosjektet det enklere for innbyggerne å
+						samhandle på en positiv og bærekraftig måte. Bydesignet er
+						utformet for å være tilgjengelig for alle, og sikrer at både
+						unge, eldre og personer med ulike behov kan delta i byens liv
+						på lik linje. Dette styrker lokalsamfunnet og skaper en
+						tryggere og mer inkluderende by for fremtiden.
+					</p>
+				</div>
 			</section>
-		</header>
+			<section class="hjem-main-tredje"></section>
+		</main>
+		<!-- footeren for nettsiden består primært av det samme som navbaren, men forskjellen er selve layouten. Den består av logo og hvltopia tittel, med linkene nedenfor. Nedenfor der igjen har vi en copyright melding ###Felles for alle sider###-->
+		<footer>
+			<section class="footer-foerste">
+				<img src="" alt="" />
+				<p>HVLTopia</p>
+			</section>
+			<section class="footer-andre">
+				<a href="./sider/kontakt.html">Kontakt</a>
+				<a href="./sider/omoss.html">Om Oss</a>
+				<a href="./sider/prosjektet.html">Prosjekt</a>
+				<a href="./sider/samfunnsansvar.html">Samfunnsansvar</a>
+			</section>
+			<section class="copyright">
+				<p>Copyright © 2024 by HVLTopia | All rights reserved</p>
+			</section>
+		</footer>
 	</body>
 </html>
