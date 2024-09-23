@@ -6,6 +6,11 @@
 body {
 }
 
+.logo {
+	width: 200px;
+	height: auto;
+}
+
 nav {
 	background-color: rgb(6, 43, 23);
 
