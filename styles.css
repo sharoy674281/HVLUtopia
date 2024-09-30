@@ -150,7 +150,7 @@ main {
 }
 
 .main-foerste-venstre {
-	width: 450px;
+	width: 400px;
 }
 .main-foerste-venstre h1 {
 	font-size: 4em;
@@ -182,13 +182,14 @@ main {
 	flex-direction: column;
 	align-items: center;
 	transition: transform 0.3s ease;
+	text-align: center;
 }
 
 .main-foerste-boks:hover {
 	transform: scale(1.03);
 }
 
-.fa-cloud {
+.fa-recycle, .fa-gear, .fa-bus {
 	font-size: 50px;
 	margin-top: 30px;
 	margin-bottom: 20px;
@@ -226,7 +227,6 @@ main {
 
 .main-andre-tekstboks h1 {
 	font-size: 3em;
-	text-transform: capitalize;
 }
 
 .main-andre-tekstboks p {
@@ -253,15 +253,22 @@ main {
 	align-items: center;
 	box-sizing: border-box;
 	padding: 0px 20px 0 20px;
+	text-align: center;
+	justify-content: center;
+	height: 200px;
+}
+
+.main-andre-bokser p {
+	font-weight: 200;
 }
 
 .main-andre-bokser-foerste, .main-andre-bokser-andre {
 	border-right: 1px solid var(--text-color);
 }
 
-
-
-
+.main-andre-bokser-siste h1{
+	margin-top: 25px;
+}
 
 .main-andre-bokser div h1 {
 	font-size: 3.5em;
@@ -284,4 +291,127 @@ main {
 	border: 5px solid white;
 	border-radius: 0 100px 5px 5px;
 	top: 100px;
+}
+
+.main-tredje-section {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-top: 2px solid black;
+	margin-bottom: 100px;
+}
+
+.main-tredje-foerste {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-tredje-foerste h1 {
+	font-size: 3.5em;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+
+.main-tredje-foerste p {
+	width: 800px;
+	text-align: center;
+	color: var(--text-color);
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+
+.main-tredje-andre {
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	gap: 30px;
+	margin-top: 40px;
+}
+
+.main-tredje-andre-boks {
+	width: 550px;
+	height: 300px;
+	border-radius: 20px;
+	padding: 30px 30px 30px 50px;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+	box-shadow: 0px 0px 10px rgb(207, 207, 207);
+	transition: transform 0.5s ease;
+}
+
+.main-tredje-andre-boks:hover {
+	transform: scale(1.02);
+}
+
+.main-tredje-andre-boks:first-child {
+		background: linear-gradient(
+			to bottom,
+			rgba(14, 43, 2, 0.5) 0px,
+			var(--main-bg-color) 900px
+		),
+		url("./bilder/karbonutslipp.jpg");
+		background-position: center;
+		background-size: cover;
+		color: white;
+}
+
+.main-tredje-andre-boks:first-child a {
+	color: white;
+}
+
+.main-tredje-andre-boks:first-child i {
+	color: white;
+} 
+
+.main-tredje-andre-boks:first-child h1 {
+	color: rgba(255, 255, 255, 0.621);
+}
+
+.main-tredje-andre-boks:first-child p {
+	color: rgb(221, 221, 221);
+}
+
+.main-tredje-andre-icon-foerste{
+	font-size: 3em;
+	color: #87986b;
+}
+
+.main-tredje-andre-boks h1 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0 20px 0 0;
+	font-size: 5em;
+	font-weight: 900;
+	color: rgba(198, 228, 191, 0.621);
+}
+
+.main-tredje-andre-boks h3 {
+	text-transform: capitalize;
+	font-size: 1.8em;
+}
+
+.main-tredje-andre-boks p {
+	font-size: 1.1em;
+	color: var(--text-color);
+}
+
+.main-tredje-andre-boks a {
+	text-decoration: none;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #87986b;
+	transition: transform 0.6s ease-out;
+}
+
+.main-tredje-andre-boks a:hover {
+	transform: scale(1.05);
 }
