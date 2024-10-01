@@ -305,7 +305,6 @@ main {
 .main-tredje-foerste {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
 .main-tredje-foerste h1 {
@@ -317,10 +316,10 @@ main {
 
 .main-tredje-foerste p {
 	width: 800px;
-	text-align: center;
-	color: var(--text-color-dark);
+	color: var(--text-color);
 	font-size: 1.1em;
 	margin-bottom: 20px;
+	font-size: 1.2em;
 }
 
 .main-tredje-andre {
