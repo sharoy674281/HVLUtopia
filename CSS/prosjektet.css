@@ -19,13 +19,13 @@ body {
 }
 
 header {
-	height: 1000px; /* Adjust the height as needed */
+	height: 600px; /* Adjust the height as needed */
 	background: linear-gradient(
 			to bottom,
 			rgba(0, 0, 0, 0.3) 0px,
-			var(--main-bg-color) 900px
+			var(--main-bg-color) 600px
 		),
-		url("./bilder/landscape\ header\ pic.jpg");
+		url("../bilder/landscape\ header\ pic.jpg");
 	background-size: cover;
 	background-position: center;
 	color: white;
@@ -282,15 +282,15 @@ main {
 }
 
 .main-andre-bilde {
-	background-image: url("./bilder/bilde\ av\ en\ vei.jpg");
+	background-image: url("../bilder/bilde\ av\ en\ vei.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 	height: 700px;
 	width: 550px;
 	border: 5px solid white;
-	border-radius: 0 100px 5px 5px;
-	top: 100px;
+	border-radius: 0 100px 30px 30px;
+	top: 40px;
 }
 
 .main-tredje-section {
@@ -299,8 +299,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border-top: 2px solid black;
-	margin-bottom: 100px;
+	padding: 100px;
 }
 
 .main-tredje-foerste {
@@ -319,7 +318,7 @@ main {
 .main-tredje-foerste p {
 	width: 800px;
 	text-align: center;
-	color: var(--text-color);
+	color: var(--text-color-dark);
 	font-size: 1.1em;
 	margin-bottom: 20px;
 }
@@ -356,7 +355,7 @@ main {
 			rgba(14, 43, 2, 0.5) 0px,
 			var(--main-bg-color) 900px
 		),
-		url("./bilder/karbonutslipp.jpg");
+		url("../bilder/karbonutslipp.jpg");
 		background-position: center;
 		background-size: cover;
 		color: white;
@@ -390,7 +389,7 @@ main {
 	margin: 0 20px 0 0;
 	font-size: 5em;
 	font-weight: 900;
-	color: rgba(198, 228, 191, 0.621);
+	color: #87986b6b;
 }
 
 .main-tredje-andre-boks h3 {
@@ -409,7 +408,7 @@ main {
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #87986b;
-	transition: transform 0.6s ease-out;
+	transition: transform 0.2s ease-out;
 }
 
 .main-tredje-andre-boks a:hover {
