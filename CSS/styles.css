@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--main-bg-color: #031602;
+	--text-color: #a9a9a9;
+	--text-color-dark: #2c2c2c;
+}
+
+* {
+	font-family: "Roboto";
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+header {
+	height: 1000px; 
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.3) 0px,
+			var(--main-bg-color) 900px
+		),
+		url("../bilder/landscape\ header\ pic.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+	align-self: center;
+	height: 80px;
+}
+
+nav .logo {
+	display: flex;
+	align-items: center;
+}
+
+nav .logo img {
+	height: 70%;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	gap: 50px;
+	align-items: center;
+}
+
+nav ul li {
+	position: relative;
+}
+
+nav ul a {
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.3em;
+	text-transform: capitalize;
+	position: relative;
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background-color: white;
+	transition: all 0.4s ease-out;
+	transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+.header_part {
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header_part h1 {
+	text-align: center;
+	width: 1100px;
+	font-size: 4.5em;
+}
+
+.header_part h1 span {
+	font-weight: 300;
+	text-transform: capitalize;
+}
+
+.header_part p {
+	color: var(--text-color);
+	font-size: 1.2em;
+	width: 800px;
+	text-align: center;
+	margin-top: 30px;
+	line-height: 1.5em;
+	margin-bottom: 40px;
+}
+
+.link_button {
+	color: white;
+	border: 2px solid white;
+	padding: 30px 100px;
+	border-radius: 40px;
+	font-size: 1.3em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: transform 0.3s ease;
+}
+
+.link_button:hover {
+  transform: scale(1.05); 
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-foerste-section {
+	padding-top: 150px;
+	display: flex;
+	background-color: var(--main-bg-color);
+	justify-content: center;
+	color: white;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	gap: 100px;
+	align-items: center;
+	padding-bottom: 150px;
+}
+
+.main-foerste-venstre {
+	width: 400px;
+}
+.main-foerste-venstre h1 {
+	font-size: 4em;
+	margin-bottom: 30px;
+}
+
+.main-foerste-venstre h1 span {
+	font-weight: 300;
+}
+
+.main-foerste-venstre p {
+	color: var(--text-color);
+	font-size: 1.1em;
+}
+
+.main-foerste-bokser {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 50px;
+}
+
+.main-foerste-boks {
+	background-color: rgba(151, 141, 141, 0.219);
+	height: 300px;
+	width: 250px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform 0.3s ease;
+	text-align: center;
+}
+
+.main-foerste-boks:hover {
+	transform: scale(1.03);
+}
+
+.fa-recycle, .fa-gear, .fa-bus {
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.main-foerste-boks h2 {
+	font-size: 2em;
+	font-weight: 800;
+}
+
+.main-foerste-boks p {
+	margin-top: 20px;
+	font-size: 1.3em;
+	text-align: center;
+	color: var(--text-color);
+}
+
+.main-andre-section {
+	display: flex;
+	justify-content: center;
+	height: 800px;
+	gap: 100px;
+	align-items: center;
+	align-self: center;
+}
+
+.main-andre-tekstboks {
+	margin: 150px 0 80px 0;
+	width: 500px;
+	padding: 50px 20px 20px 20px;
+	border-radius: 10px;
+	border-top: 5px solid var(--text-color);
+	border-bottom: 5px solid var(--text-color);
+}
+
+.main-andre-tekstboks h1 {
+	font-size: 3em;
+}
+
+.main-andre-tekstboks p {
+	margin-top: 30px;
+	font-size: 1.1em;
+	color: var(--text-color);
+	letter-spacing: 1px;
+}
+
+.main-andre-tekstboks h1 span {
+	font-weight: 400;
+}
+
+.main-andre-bokser {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.main-andre-bokser div {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0px 20px 0 20px;
+	text-align: center;
+	justify-content: center;
+	height: 200px;
+}
+
+.main-andre-bokser p {
+	font-weight: 200;
+}
+
+.main-andre-bokser-foerste, .main-andre-bokser-andre {
+	border-right: 1px solid var(--text-color);
+}
+
+.main-andre-bokser-siste h1{
+	margin-top: 25px;
+}
+
+.main-andre-bokser div h1 {
+	font-size: 3.5em;
+	font-weight: 800;
+}
+
+.main-andre-bokser div h4 {
+	font-size: 1.3em;
+	font-weight: 400;
+	color: var(--text-color-dark);
+}
+
+.main-andre-bilde {
+	background-image: url("../bilder/bilde\ av\ en\ vei.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 700px;
+	width: 550px;
+	border: 5px solid white;
+	border-radius: 0 100px 30px 30px;
+	top: 40px;
+}
+
+.main-tredje-section {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 100px;
+}
+
+.main-tredje-foerste {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-tredje-foerste h1 {
+	font-size: 3.5em;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+
+.main-tredje-foerste p {
+	width: 800px;
+	text-align: center;
+	color: var(--text-color-dark);
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+
+.main-tredje-andre {
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	gap: 30px;
+	margin-top: 40px;
+}
+
+.main-tredje-andre-boks {
+	width: 550px;
+	height: 300px;
+	border-radius: 20px;
+	padding: 30px 30px 30px 50px;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+	box-shadow: 0px 0px 10px rgb(207, 207, 207);
+	transition: transform 0.5s ease;
+}
+
+.main-tredje-andre-boks:hover {
+	transform: scale(1.02);
+}
+
+.main-tredje-andre-boks:first-child {
+		background: linear-gradient(
+			to bottom,
+			rgba(14, 43, 2, 0.5) 0px,
+			var(--main-bg-color) 900px
+		),
+		url("../bilder/karbonutslipp.jpg");
+		background-position: center;
+		background-size: cover;
+		color: white;
+}
+
+.main-tredje-andre-boks:first-child a {
+	color: white;
+}
+
+.main-tredje-andre-boks:first-child i {
+	color: white;
+} 
+
+.main-tredje-andre-boks:first-child h1 {
+	color: rgba(255, 255, 255, 0.621);
+}
+
+.main-tredje-andre-boks:first-child p {
+	color: rgb(221, 221, 221);
+}
+
+.main-tredje-andre-icon-foerste{
+	font-size: 3em;
+	color: #87986b;
+}
+
+.main-tredje-andre-boks h1 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0 20px 0 0;
+	font-size: 5em;
+	font-weight: 900;
+	color: #87986b6b;
+}
+
+.main-tredje-andre-boks h3 {
+	text-transform: capitalize;
+	font-size: 1.8em;
+}
+
+.main-tredje-andre-boks p {
+	font-size: 1.1em;
+	color: var(--text-color);
+}
+
+.main-tredje-andre-boks a {
+	text-decoration: none;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #87986b;
+	transition: transform 0.2s ease-out;
+}
+
+.main-tredje-andre-boks a:hover {
+	transform: scale(1.05);
+}
