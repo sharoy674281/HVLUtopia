@@ -118,9 +118,9 @@ nav ul li a:hover::after {
 .link_button {
 	color: white;
 	border: 2px solid white;
-	padding: 30px 100px;
+	padding: 30px 90px;
 	border-radius: 40px;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -153,7 +153,7 @@ main {
 	width: 400px;
 }
 .main-foerste-venstre h1 {
-	font-size: 4em;
+	font-size: 3.5em;
 	margin-bottom: 30px;
 }
 
@@ -175,14 +175,15 @@ main {
 
 .main-foerste-boks {
 	background-color: rgba(151, 141, 141, 0.219);
-	height: 300px;
-	width: 250px;
+	height: 250px;
+	width: 200px;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	transition: transform 0.3s ease;
 	text-align: center;
+	padding: 20px;
 }
 
 .main-foerste-boks:hover {
@@ -196,13 +197,13 @@ main {
 }
 
 .main-foerste-boks h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 800;
 }
 
 .main-foerste-boks p {
 	margin-top: 20px;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	text-align: center;
 	color: var(--text-color);
 }
