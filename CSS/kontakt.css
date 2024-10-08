@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--main-bg-color: #031602;
+	--text-color: #a9a9a9;
+	--text-color-dark: #2c2c2c;
+	--main-accent-color: #87986b;
+}
+
+* {
+	font-family: "Roboto";
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+header {
+	height: 800px;
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.6) 500px,
+			white 800px
+		),
+		url("../bilder/bilde\ av\ bergen.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+   margin-bottom: 50px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+	align-self: center;
+	height: 80px;
+}
+
+nav .logo {
+	display: flex;
+	align-items: center;
+}
+
+nav .logo img {
+	height: 70%;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	gap: 50px;
+	align-items: center;
+}
+
+nav ul li {
+	position: relative;
+}
+
+nav ul a {
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.3em;
+	text-transform: capitalize;
+	position: relative;
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background-color: white;
+	transition: all 0.4s ease-out;
+	transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+.header_part {
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header_part h1 {
+	text-align: center;
+	width: 1100px;
+	font-size: 4.5em;
+   font-weight: 500;
+}
+
+.header_part > h1 > span {
+   font-weight:300 ;
+}
+
+.header_part p {
+	color: rgb(204, 204, 204);
+	font-size: 1.2em;
+	width: 800px;
+	text-align: center;
+	margin-top: 30px;
+	line-height: 1.5em;
+	margin-bottom: 40px;
+}
+
+.main-foerste {
+	display: flex;
+	margin-top: 40px;
+   justify-content: center;
+   gap: 40px;
+   margin-bottom: 100px;
+}
+
+.main-foerste-boks {
+   width: 350px;
+	height: 300px;
+	border-radius: 10px;
+	padding: 30px 30px 30px 50px;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+	box-shadow: 0px 0px 10px rgb(238, 238, 238);
+	transition: transform 0.5s ease;
+}
+.main-foerste-boks > h1 {
+   position: absolute;
+   right: 0;
+   top: 0;
+   margin: 0 10px 0 0;
+   font-size: 4.7em;
+   color: #87986b46;
+   font-weight: 800;
+}
+
+.main-foerste-boks > h3 {
+   font-size: 1.7em;
+   margin-top: 10px;
+   font-weight: 600;
+}
+
+.main-foerste-boks > p{
+   color: var(--text-color);
+}
+
+.main-foerste-boks > a{
+   color: var(--main-accent-color);
+   text-decoration: none;
+   font-size: 1.3em;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+.main-foerste-boks:hover {
+	transform: scale(1.02);
+}
+
+.main-foerste-icon {
+   color: var(--main-accent-color);
+   font-size: 2em;
+}
+
+.fa-arrow-right {
+   margin-left: 10px;
+}
+
+.main-andre {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 80px;
+}
+
+iframe {
+   height: 600px;
+   border-radius: 20px 0 0 20px;
+}
+
+.main-andre-høyre {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--main-bg-color);
+   height: 600px;
+   width: 400px;
+   padding: 40px;
+   border-radius: 10px 100px 10px 10px;
+   color: white;
+   justify-content: space-between;
+}
+
+.main-andre-høyre h1 {
+   font-size: 3.5em;
+}
+
+.main-andre-høyre > h1 > span {
+   font-weight: 300;
+}
+
+.main-andre-høyre > p {
+   font-size: 0.8;
+   color: var(--text-color);
+}
+
+.main-andre-høyre form {
+   display: flex;
+   flex-direction: column;
+}
+
+.main-andre-høyre form input {
+   height: 50px;
+   border-radius: 10px;
+   padding-left: 10px;
+   font-size: 1.1em;
+   margin-bottom: 20px;
+}
+
+.main-andre-høyre form textarea {
+   height: 150px;
+   margin-bottom: 20px;
+   font-size: 1.1em;
+   border-radius: 10px;
+   resize: none;
+}
+
+.main-andre-høyre form button {
+   width: 200px;
+   height: 50px;
+   align-self: center;
+   border-radius: 40px;
+   font-weight: 500;
+   color: white;
+   text-transform: uppercase;
+   font-size: 1.1em;
+   background-color: transparent;
+   border: 1px solid white;
+   cursor: pointer;
+   transition: transform 0.3s ease;
+}
+
+.main-andre-høyre form button:hover {
+   transform: scale(0.95);
+}
