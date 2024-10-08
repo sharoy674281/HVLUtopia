@@ -23,7 +23,7 @@ header {
 	height: 1000px;
 	background: linear-gradient(
 			to bottom,
-			rgba(0, 0, 0, 0.3) 500px,
+			rgba(0, 0, 0, 0.3) 800px,
 			white 1000px
 		),
 		url("../bilder/vindmøller\ bilde.jpg");
@@ -132,105 +132,6 @@ nav ul li a:hover::after {
 main {
 	display: flex;
 	flex-direction: column;
-}
-
-.main-foerste-section {
-	padding-top: 150px;
-	display: flex;
-	background-color: var(--main-bg-color);
-	justify-content: center;
-	border-bottom-left-radius: 30px;
-	border-bottom-right-radius: 30px;
-	gap: 100px;
-	align-items: center;
-	padding-bottom: 150px;
-	background-color: white;
-	flex-direction: column;
-}
-
-.main-foerste-venstre {
-	width: 400px;
-}
-.main-foerste-venstre h1 {
-	font-size: 4em;
-	margin-bottom: 30px;
-}
-
-.main-foerste-venstre h1 span {
-	font-weight: 300;
-}
-
-.main-foerste-venstre p {
-	color: var(--text-color);
-	font-size: 1.1em;
-}
-
-.main-foerste-bokser {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	gap: 50px;
-	margin-top: 50px;
-}
-
-.main-foerste-overskrift {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
-.main-foerste-overskrift h1 {
-	font-size: 4em;
-	font-weight: 500;
-}
-
-.main-foerste-overskrift span {
-	font-weight: 300;
-}
-
-.main-foerste-overskrift p {
-	color: var(--text-color);
-	width: 900px;
-	font-size: 1.2em;
-}
-
-.main-foerste-boks {
-	background-color: rgba(255, 255, 255, 0.219);
-	height: 300px;
-	width: 250px;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	transition: transform 0.3s ease;
-	text-align: center;
-	box-shadow: 0px 0px 10px rgb(210, 210, 210);
-}
-
-.main-foerste-boks:hover {
-	transform: scale(1.03);
-	color: var();
-}
-
-.fa-status {
-	font-size: 50px;
-	margin-top: 30px;
-	margin-bottom: 20px;
-	color: var(--main-accent-color);
-}
-
-.main-foerste-boks h2 {
-	font-size: 2em;
-	font-weight: 800;
-	font-weight: 400;
-}
-
-.main-foerste-boks p {
-	margin-top: 20px;
-	font-size: 1.3em;
-	text-align: center;
-	color: var(--text-color);
 }
 
 .main-andre-section {

@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--main-bg-color: #031602;
+	--text-color: #a9a9a9;
+	--text-color-dark: #2c2c2c;
+	--main-accent-color: #87986b;
+}
+
+* {
+	font-family: "Roboto";
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+header {
+	height: 800px;
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.6) 600px,
+			rgb(255, 255, 255) 800px
+		),
+		url("../bilder/omossbilde.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+	align-self: center;
+	height: 80px;
+}
+
+nav .logo {
+	display: flex;
+	align-items: center;
+}
+
+nav .logo img {
+	height: 70%;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	gap: 50px;
+	align-items: center;
+}
+
+nav ul li {
+	position: relative;
+}
+
+nav ul a {
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.3em;
+	text-transform: capitalize;
+	position: relative;
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background-color: white;
+	transition: all 0.4s ease-out;
+	transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+.header_part {
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header_part h1 {
+	text-align: center;
+	width: 1100px;
+	font-size: 4.5em;
+	font-weight: 500;
+}
+
+.header_part > h1 > span {
+	font-weight: 300;
+}
+
+.header_part p {
+	color: rgb(204, 204, 204);
+	font-size: 1.2em;
+	width: 800px;
+	text-align: center;
+	margin-top: 30px;
+	line-height: 1.5em;
+	margin-bottom: 40px;
+}
+
+.main-foerste {
+	padding: 0 100px 50px 100px;
+}
+
+.main-foerste h3 {
+	color: var(--main-accent-color);
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.main-foerste h1 {
+	font-size: 4em;
+	font-weight: 500;
+	text-transform: capitalize;
+	width: 500px;
+}
+
+.main-foerste p {
+	color: var(--text-color);
+	font-size: 1.2em;
+	width: 600px;
+}
+
+.main-andre {
+	padding: 0 100px 0 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 40px;
+	margin-bottom: 100px;
+}
+
+.main-andre > a {
+	padding: 20px;
+	border-radius: 10px;
+	color: black;
+	text-decoration: none;
+	box-shadow: 0px 0px 10px rgb(224, 224, 224);
+	display: flex;
+	flex-direction: column;
+   align-items: center;
+   transition: transform 0.3s ease;
+}
+
+.main-andre > a:hover {
+   transform: scale(1.05);
+}
+
+.main-andre-tekst {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: red;
+}
+
+.main-andre h3 {
+	font-size: 1.5em;
+	margin: 10px 0 10px 0;
+	font-weight: 500;
+}
+
+.main-andre h4 {
+	color: var(--text-color);
+   font-weight: 500;
+   text-transform: capitalize;
+}
+
+.main-andre h2 {
+	margin-top: 10px;
+	color: var(--main-accent-color);
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.main-andre-bilde {
+	height: 250px;
+	width: 250px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+}
+
+.rakhman {
+	background-image: url("../bilder/rakhmanbilde.jpg");
+}
+
+.erlend {
+	background-image: url("../bilder/erlend.jpg");
+}
+
+.vegard {
+	background-image: url("../bilder/Vegard.jpg");
+}
+
+.mads {
+	background-image: url("../bilder/mads.jpeg");
+}
+
+.tobias {
+	background-image: url("../bilder/Skjermbilde\ 2024-10-06\ 193927.png");
+}
