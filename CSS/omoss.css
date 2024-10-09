@@ -217,3 +217,11 @@ nav ul li a:hover::after {
 .tobias {
 	background-image: url("../bilder/Skjermbilde\ 2024-10-06\ 193927.png");
 }
+
+.simen {
+	background-image: url("../bilder/simenbilde.jpg");
+}
+
+.håvard {
+	background-image: url("../bilder/havard_bilde.png");
+}
