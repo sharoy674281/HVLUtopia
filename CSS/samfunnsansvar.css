@@ -320,7 +320,6 @@ nav ul li a:hover::after {
 
 .main-skjette-boks:hover {
 	transform: scale(1.03);
-	color: var();
 }
 
 .fa-status {
