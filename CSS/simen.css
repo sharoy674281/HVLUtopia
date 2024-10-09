@@ -1,0 +1,42 @@
+body {
+background: linear-gradient(to top, #6eb33d, rgb(212, 238, 212));
+padding: 70px;
+}
+
+img {
+height: 250px;
+border: solid black;
+border-radius: 50px;
+margin: 10px;
+}
+
+h1 {
+color: rgb(77, 77, 77);
+font-style:Times;
+}
+
+.boks {
+    color: rgb(77, 77, 77);
+    font-style: Times;
+    padding: 20px;
+    display: flex;
+}
+
+.boks > div {
+    border: 3px solid rgb(77, 77, 77);
+    padding: 20px;
+    border-radius: 50px;    
+}
+
+
+
+.bilde{
+    float: left;
+}
+
+.bildetekst{
+   
+}
+.kontakt {
+  text-align: center;
+}
