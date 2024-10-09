@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--main-bg-color: #031602;
+	--text-color: #a9a9a9;
+	--text-color-dark: #2c2c2c;
+	--main-accent-color: #87986b;
+}
+
+* {
+	font-family: "Roboto";
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+header {
+	height: 1000px; /* Adjust the height as needed */
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.3) 500px,
+			white 1000px
+		),
+		url("../bilder/vindmøller\ bilde.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+	align-self: center;
+	height: 80px;
+}
+
+nav .logo {
+	display: flex;
+	align-items: center;
+}
+
+nav .logo img {
+	height: 70%;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	gap: 50px;
+	align-items: center;
+}
+
+nav ul li {
+	position: relative;
+}
+
+nav ul a {
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.3em;
+	text-transform: capitalize;
+	position: relative;
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background-color: white;
+	transition: all 0.4s ease-out;
+	transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+.header_part {
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header_part h1 {
+	text-align: center;
+	width: 1100px;
+	font-size: 4.5em;
+	font-weight: 300;
+}
+
+.header_part p {
+	color: var(--text-color-dark);
+	font-size: 1.4em;
+	width: 800px;
+	text-align: center;
+	margin-top: 30px;
+	line-height: 1.5em;
+	margin-bottom: 40px;
+	font-weight: 500;
+}
+
+.link_button {
+	color: white;
+	border: 2px solid white;
+	padding: 30px 100px;
+	border-radius: 40px;
+	font-size: 1.3em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: transform 0.3s ease;
+}
+
+.link_button:hover {
+	transform: scale(1.05);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-foerste-section {
+	padding-top: 150px;
+	display: flex;
+	background-color: var(--main-bg-color);
+	justify-content: center;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	gap: 100px;
+	align-items: center;
+	padding-bottom: 150px;
+	background-color: white;
+	flex-direction: column;
+}
+
+.main-foerste-venstre {
+	width: 400px;
+}
+.main-foerste-venstre h1 {
+	font-size: 4em;
+	margin-bottom: 30px;
+}
+
+.main-foerste-venstre h1 span {
+	font-weight: 300;
+}
+
+.main-foerste-venstre p {
+	color: var(--text-color);
+	font-size: 1.1em;
+}
+
+.main-foerste-bokser {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 50px;
+	margin-top: 50px;
+}
+
+.main-foerste-overskrift {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.main-foerste-overskrift h1 {
+	font-size: 4em;
+	font-weight: 500;
+}
+
+.main-foerste-overskrift span {
+	font-weight: 300;
+}
+
+.main-foerste-overskrift p {
+	color: var(--text-color);
+	width: 900px;
+	font-size: 1.2em;
+}
+
+.main-foerste-boks {
+	background-color: rgba(255, 255, 255, 0.219);
+	height: 300px;
+	width: 250px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform 0.3s ease;
+	text-align: center;
+	box-shadow: 0px 0px 10px rgb(210, 210, 210);
+}
+
+.main-foerste-boks:hover {
+	transform: scale(1.03);
+	color: var();
+}
+
+.fa-status {
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	color: var(--main-accent-color);
+}
+
+.main-foerste-boks h2 {
+	font-size: 2em;
+	font-weight: 800;
+	font-weight: 400;
+}
+
+.main-foerste-boks p {
+	margin-top: 20px;
+	font-size: 1.3em;
+	text-align: center;
+	color: var(--text-color);
+}
+
+.main-andre-section {
+	display: flex;
+	background-color: var(--main-bg-color);
+	color: white;
+	flex-direction: column;
+	padding: 100px;
+}
+
+.main-andre-section > h1 {
+	font-weight: 400;
+	font-size: 4em;
+}
+
+.main-andre-section > p {
+	font-size: 1.2em;
+	color: var(--text-color);
+}
+
+.main-andre-foerste p{
+	margin: 20px 0 20px 0;
+	font-size: 1.1em;
+	color: whitesmoke;
+}
+
+
+.main-andre-bokser {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	margin-top: 20px;
+}
+
+.main-andre-bokser > div {
+	padding: 20px;
+	border-radius: 20px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.2s;
+}
+
+.main-andre-bokser > div:hover {
+	transform: scale(1.01);
+}
+
+.main-andre-bokser h2 {
+	color: var(--main-accent-color);
+	font-size: 1.8em;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+
+.main-andre-bokser p {
+	font-size: 1.1em;
+	color: rgb(223, 225, 225);
+	font-weight: 500;
+}
+
+.main-andre-boks1 {
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.5) 500px,
+			white 1000px
+		),
+		url("../bilder/miljøutfordringer.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-andre-boks2 {
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.5) 500px,
+			white 1000px
+		),
+		url("../bilder/transportsystem.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-andre-boks3 {
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.5) 500px,
+			white 1000px
+		),
+		url("../bilder/grønn\ teknologi.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-andre-boks4 {
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.5) 500px,
+			white 1000px
+		),
+		url("../bilder/globale\ mål.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-tredje-section {
+	padding: 100px;
+	display: grid;
+}
+
+.main-tredje-foerste > h1 {
+	font-size: 4em;
+	font-weight: 400;
+}
+
+.main-tredje-foerste > p {
+	font-size: 1.2em;
+	color: var(--text-color);
+}
+
+.main-tredje-andre-bokser {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-top: 40px;
+}
+
+.main-tredje-andre-boks {
+	display: flex;
+	gap: 20px;
+	box-shadow: 0px 0px 10px rgb(225, 225, 225);
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.main-tredje-andre-content {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 10px 0;
+}
+
+.main-tredje-andre-content > h1 {
+	color: var(--main-accent-color);
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.main-tredje-andre-content > h4 {
+	font-size: 1.5em;
+	font-weight: 500;
+	color: var(--text-color);
+	margin-top: 15px;
+}
+
+.main-tredje-andre-content > p {
+	font-size: 1.1em;
+
+}
+
+.karbon-bilde {
+	background-image: url("../bilder/karbonutslipp.jpg");
+}
+
+.sensor-bilde {
+	background-image: url("../bilder/sensor-bilde.jpg");
+}
+
+.grønn-bilde {
+	background-image: url("../bilder/grønn-transport.jpg");
+}
+
+.energi-bilde {
+	background-image: url("../bilder/solceller-bilde.jpg");
+}
+
+.main-tredje-andre-bilde {
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 30%;
+	border-radius: 10px;
+}
+
+.main-tredje-andre-content {
+	width: 70%;
+}
+
+.main-fjerde-section {
+	color: white;
+	background-color: var(--main-bg-color);
+	padding: 20px;
+	padding-bottom: 80px;
+}
+
+.main-fjerde-section div {
+	margin-bottom: 20px;
+}
+
+.main-femte-section {
+	padding: 100px;
+	padding-bottom: 80px;
+	background-color: var(--main-bg-color);
+	color: white;
+}
+
+.main-femte-section > h1 {
+	font-size: 4em;
+	font-weight: 400;
+}
+
+.main-femte-section > p {
+	font-size: 1.2em;
+	color: var(--text-color);
+}
+
+.main-femte-andre {
+	display: flex;
+	gap: 20px;
+	margin-top: 40px;
+}
+
+.main-femte-bokser {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.main-femte-bokser > div {
+	height: 100%;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 0px 5px var(--text-color);
+}
+
+.main-femte-bokser > div h2 {
+	font-size: 1.8em;
+	color: var(--main-accent-color);
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+
+.main-femte-bokser > div p{
+	font-size: 1em;
+	color: rgb(222, 222, 222);
+	font-weight: 500;
+}
+
+.main-femte-andre-bilde {
+	width: 700px;
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.3) 0px,
+			rgb(0, 0, 0) 1000px
+		),
+		url("../bilder/bilde\ av\ en\ vei.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px var(--text-color);
+}
