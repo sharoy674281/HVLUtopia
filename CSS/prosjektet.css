@@ -391,3 +391,28 @@ main {
 	border-radius: 20px;
 	box-shadow: 0px 0px 5px var(--text-color);
 }
+
+.main-skjette-section {
+	padding: 100px;
+	display: grid;
+}
+
+.main-skjette-section > h1 {
+	font-size: 4em;
+	font-weight: 400;
+}
+
+.main-skjette-section > p {
+	font-size: 1.2em;
+	color: var(--text-color);
+}
+
+.main-skjette-bilde {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.main-skjette-bilde img {
+	width: 100%;
+}
